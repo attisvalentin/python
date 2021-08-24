@@ -32,9 +32,11 @@ def guess():
         result.config(text="Its lower than the number, guess other!")
     elif n == guessed_number_int:
         result.config(text="Yes it is!")
-        guessbtn.pack_forget()
+        hide_button()
 
-
+def hide_button():
+    user_input.place(x=210,y=500)
+    guessbtn.place(x=350,y=500)
 
 playbtn = tkinter.Button(window,text="Play Game",font=("Arial",14), fg="Black", bg="#37b373", command=play)
 playbtn.place(x=170,y=250)
