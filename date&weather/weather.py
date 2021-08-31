@@ -2,7 +2,7 @@ import requests
 import os
 from datetime import datetime
 
-user_api = os.environ['13b7fc15f0c0a6edbfbf5050437ddacf']
+user_api = os.environ['13b7fc15f0c0a6edbfbf5050437ddacf'] #ezzel gond van, ránézni!
 loc = input("Enter city name: ")
 
 comp_api_link = "api.openweathermap.org/data/2.5/weather?q="+loc+"&appid="+user_api
